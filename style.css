@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tillana&display=swap');
+.titulo{
+    font-family: 'Alkatra', cursive;
+    text-align:center;
+    background:red;
+    border: 2px black solid;
+}
+body{
+    background: white;
+    border: 2px  solid;
+}
+*{
+    margin:0;
+    padding:1px;
+    box-sizing: border-box;
+}
+.logo{
+    width: 500px;
+  
+}
+.texto{
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+}
+.caixa{
+  display:flex;
+}
+.titulinho{
+  font-family: 'Lobster', cursive;
+  font-size:60px;
+}
+.paragrafo{
+  font-family: 'Tillana', cursive;
+  font-size:25px;
+}
+.turma{
+    display:flex;
+  flex-direction: column;
+  margin:auto;
+  width:  500px;
+}
+.textin{
+    text-align: center;
+    font-family:'Alkatra', cursive; 
+}
+.caixa2{
+    border: 2px solid;
+    background:#b5abaa;
+}
+.myButton {
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family: 'Alkatra', cursive;
+	font-size:30px;
+	padding:6px 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    text-decoration: none; 
+}
+.myButton:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.myButton:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+footer{
+  background: #b5abaa;
+  display: flex;
+  justify-content: center;
+}
